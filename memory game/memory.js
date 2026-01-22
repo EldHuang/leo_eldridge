@@ -1,22 +1,3 @@
-let option1 = document.querySelector('#one');
-let option2 = document.querySelector('#two');
-let option3 = document.querySelector('#three');
-let option4 = document.querySelector('#four');
-
-const generatePattern = (len) => {
-    return Array.from({ length: len }, () => Math.floor(Math.random() * 3))
-};
-
-let newPatternBtn = document.querySelector('#newPattern');
-
-newPatternBtn.addEventListener('click', () => {
-    
-
-    for (i in pattern) {
-        console.log(pattern[i]);
-    }
-})
-
 class memoryGame {
     constructor() {
         this.options = [
@@ -31,6 +12,18 @@ class memoryGame {
     }
 
     init() {
-        let pattern = generatePattern(6);
+        this.patternBtn.addEventListener('click', () => this.newRound(5));
+    }
+
+    generatePattern(len) {
+        return Array.from({ length: len }, () => Math.floor(Math.random() * 3))
+    }
+
+    newRound(len) {
+        this.pattern = this.generatePattern(len);
+        console.log('new pattern created', this.pattern);
+
     }
 }
+
+const game = new memoryGame;
