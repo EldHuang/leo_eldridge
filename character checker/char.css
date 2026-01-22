@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 15px
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100vw
+}
+
+.stat-box {
+    margin: 2vh;
+}
+
+progress {
+    width: 30vw;
+    height: 5vh !important;
+
+}
+
+#create-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.char {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#newChar {
+    background-color: rgb(0, 166, 255);
+}
+
+#newChar:hover {
+    transition: 1s all ease;
+    background-color: rgb(0, 81, 255);
+}
+
+h2 {
+    margin-bottom: 100px;
+}

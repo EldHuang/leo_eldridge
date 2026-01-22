@@ -1,0 +1,96 @@
+body {
+    margin: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 30px;
+}
+
+#border {
+    border: 1px solid black;
+    height: 70vh;
+}
+
+#submitBtn {
+    width: 75px;
+    padding: 7px;
+    background-color: rgb(255, 176, 216);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+#submitBtn:hover {
+    background-color: rgb(255, 142, 198);
+    transition: all 1s ease;
+    box-shadow: 10px 10px 5px;
+}
+
+.taskParent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.task {
+    background-color: #feff9c;
+    font-family: 'Courier New', Courier, monospace;
+    width: 210px;
+    margin: 30px;
+    border: 3px black dotted;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    transition: 1s all ease-in-out;
+}
+
+.task:hover {
+    background-color: rgb(252, 255, 96);
+    box-shadow: 7px 5px 10px;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.htwo {
+    text-align: center;
+    background-color: rgb(255, 244, 145);
+    border-radius: 20px;
+    padding: 5px; 
+}
+
+.todo {
+    background-color: rgb(215, 230, 255);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    border: 2px black dashed;
+    border-radius: 10px;
+}
+
+.todo:hover {
+    transition: 1s all ease;
+    background-color: #7cacff;
+    box-shadow: 10px 10px 10px
+}
+
+#content #toDoText {
+    vertical-align: middle;
+}
+
+hr {
+    border: 1px solid black;
+    width: 175px;
+    text-align: center;
+}

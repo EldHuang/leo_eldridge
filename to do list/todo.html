@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="todo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <iframe src="../header.html" style="width: 100%; height: 100%; border: none;">
+    </iframe>
+
+    <div class="flex-row">
+
+        <div class="flex-col">
+            <h2>To Do List</h2>
+
+            <label class="todo">Title: 
+                <input type="text" id="title"/>
+            </label>
+
+            <label class="todo" id="content">Content: 
+                <textarea id="toDoText" type="text"></textarea>
+            </label>
+
+            <label class="todo">Time: 
+                <input type="time" id="time" />
+            </label>
+
+
+            <button type='submit' id="submitBtn">Submit</button>
+
+        </div>
+
+        <div id="border"></div>
+
+        <div class="taskParent">
+        
+        </div>
+    
+    </div>
+
+    <script src="todo.js"> </script>
+</body>
+
+</html>
