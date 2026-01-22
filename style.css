@@ -10,6 +10,10 @@
     }
 }
 
+body {
+    margin: 0px;
+}
+
 .portfolioTitle {
     animation-name: fadeIn;
     animation-duration: 2s;
@@ -29,4 +33,30 @@
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+}
+
+
+.downBtnContainer {
+    background-color: grey;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 47vw;
+    bottom: 75px;
+    transition: 1s all ease;
+}
+
+
+#down-arrow {
+    height: 2.3vw;
+}
+
+.downBtnContainer:hover {
+    background-color: grey;
+    box-shadow: 10px 10px 10px;
 }
