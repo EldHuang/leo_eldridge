@@ -10,7 +10,7 @@ const generatePattern = (len) => {
 let newPatternBtn = document.querySelector('#newPattern');
 
 newPatternBtn.addEventListener('click', () => {
-    let pattern = generatePattern(6);
+    
 
     for (i in pattern) {
         console.log(pattern[i]);
@@ -27,6 +27,10 @@ class memoryGame {
         ];
         this.patternBtn = document.querySelector('#newPattern');
         this.pattern = [];
-        this.
+        this.init();
+    }
+
+    init() {
+        let pattern = generatePattern(6);
     }
 }
