@@ -16,13 +16,12 @@ class memoryGame {
     }
 
     generatePattern(len) {
-        return Array.from({ length: len }, () => Math.floor(Math.random() * 3))
+        return Array.from({ length: len }, () => Math.floor(Math.random() * 4))
     }
 
     newRound(len) {
         this.pattern = this.generatePattern(len);
         console.log('new pattern created', this.pattern);
-
     }
 }
 
